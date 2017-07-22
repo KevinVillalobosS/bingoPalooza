@@ -20,9 +20,9 @@ Meteor.methods({
       check(min, Number);
       check(max, Number);
 
-      let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      let randomNumber = Math.floor(Math.random() * (50 )) + 1;
 
-      return { method: 'Meteor RPC', number: randomNumber };
+      return { 'El numero es': randomNumber };
     }
     catch (err) {
       console.error(err);

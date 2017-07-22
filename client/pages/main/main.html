@@ -3,7 +3,7 @@
     <h1>Welcome to {{ main.appName }}!</h1>
   </div>
   <div class="row">
-    <div class="col-md-12 col-xs-12">
+    <div class="col-md-4 col-xs-12">
       <p>Use this template for your own Angular-Meteor projects!</p>
       <p>Based on the following technologies</p>
       <ul>
@@ -17,19 +17,9 @@
       </ul>
       <p><a ui-sref="about">About this template...</a></p>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-xs-12">
-      <h3>Get ping from server!</h3>
-      <div>
-        <button class="btn" ng-click="main.getPingMeteor()">Ping from Meteor Method</button>
-        <button class="btn" ng-click="main.getPingRest()">Ping from REST API</button>
-      </div>
-      <pre>{{ main.pingResult | json: 2 }}</pre>
-    </div>
-    <div class="col-md-6 col-xs-12">
-      <h3>Get a random number from server!</h3>
-      <div class="row">
+    <div class="col-md-5 col-xs-12">
+      <h3>Bingopalooza USACH!</h3>
+      <!--<div class="row">
         <div class="col-md-6 col-xs-12 input-group">
           <span class="input-group-addon" id="min">Min</span>
           <input type="number" class="form-control" placeholder="0" aria-describedby="min" ng-model="main.min">
@@ -38,12 +28,31 @@
           <span class="input-group-addon" id="max">Max</span>
           <input type="number" class="form-control" placeholder="10" aria-describedby="max" ng-model="main.max">
         </div>
-      </div>
+      </div> -->
       <div>
-        <button class="btn" ng-click="main.getRandomNumberMeteor()">Number from Meteor Method</button>
-        <button class="btn" ng-click="main.getRandomNumberRest()">Number from REST API</button>
+        <button class="btn" ng-click="main.getRandomNumberMeteor()">Generar Numero</button>
+        <button class="btn" ng-click="main.getRandomNumberRest()">Quiero un nuevo carton</button>
       </div>
-      <pre>{{ main.randomResult | json: 2 }}</pre>
+      <pre>{{ main.randomResult | json: 2 }}</pre> 
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <h3>--------------------------------------------------</h3>
+      <div>
+        <li>VALE POR UN CARTON</li>
+      </div>
+    </div>
+    <!--
+    <div class="col-md-6 col-xs-12">
+      <h3>Get ping from server!</h3>
+      <div>
+        <button class="btn" ng-click="main.getPingMeteor()">Ping from Meteor Method</button>
+        <button class="btn" ng-click="main.getPingRest()">Ping from REST API</button>
+      </div>
+      <pre>{{ main.pingResult | json: 2 }}</pre>
+    </div>
+    -->
+    
   </div>
 </div>

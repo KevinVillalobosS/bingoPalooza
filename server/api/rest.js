@@ -25,14 +25,8 @@ JsonRoutes.add('GET', '/api/ping/:clientTimestamp', (request, response, next) =>
 
 JsonRoutes.add('POST', '/api/getRandomNumber', (request, response, next) => {
   try {
-    let min = request.body.min;
-    let max = request.body.max;
 
-    check(min, Number);
-    check(max, Number);
-
-    let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    let result = { method: 'REST Request', number: randomNumber };
+    let result = { valor: 'VALE POR UN NUEVO CARTON'};
     
     JsonRoutes.sendResult(response, { data: result });
   }
